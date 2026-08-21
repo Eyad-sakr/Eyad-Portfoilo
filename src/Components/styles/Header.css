@@ -1,0 +1,180 @@
+header {
+ 
+    position: fixed;
+    max-height: 70px;
+    height: auto;
+    color: transparent;
+    transition: 0.3s;
+    z-index: 100;
+    overflow-x: hidden;
+    max-width: 1530px;
+    width: 100%;
+    overflow: visible;
+    
+}
+header .container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.Logo {
+    color: white;
+    font-size: 32px;
+    padding: var(--space-sm);
+    font-weight: bold;
+    white-space: nowrap;
+      text-shadow: 0 0 36px rgba(34, 211, 238, 0.14);
+
+}
+.Logo span{
+    color: var(--contact-cyan);
+}
+nav {
+    padding: var(--space-sm);
+    
+}
+nav ul {
+    display: flex;
+        align-items: center;
+}
+nav ul a {
+  text-decoration: none;
+}
+nav ul  li:not(:last-child) a {
+    cursor: pointer;
+    color: #FFFFFFB3;
+    font-size: 20px;
+    padding: var(--space-sm);
+    margin-right: var(--space-2xl);
+    transition: 1s ease ;
+    border-radius: 20px;
+}
+nav ul  li a:hover {
+    
+     box-shadow:0 0 10px rgba(0,200,255,.5),
+  0 0 20px rgba(0,200,255,.5),
+  0 0 40px rgba(0,200,255,.7),
+  inset 0 0 10px rgba(0,200,255,0.2);
+    color: #00C8FF;
+}
+
+
+nav ul button {
+     max-width: 136px;
+     width: 100%;
+    padding: 10px;
+    border: 1px solid var(--contact-cyan);
+    background: rgba(0, 200, 255, 0.12);
+    color: var(--contact-cyan);
+    font-family: "Space Mono", monospace;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    box-shadow: none;
+    border-radius: 15px;
+    transition: 0.5s;
+
+
+}
+nav ul button:hover {
+     box-shadow:0 0 5px rgba(0,200,255,.5),
+  0 0 10px rgba(0,200,255,.5),
+  0 0 30px rgba(0,200,255,.7),
+   inset 0 0 10px rgba(0,200,255,0.2);;
+
+  /* */
+}
+/* الـ Hamburger يظهر بس على موبايل */
+.Hamburger {
+  display: none;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: var(--space-sm);
+}
+
+/* الـ mobile menu مخفي افتراضياً */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 45px;
+  right: 0;
+  width: 40%;
+  background-color: #0d0d0d;
+  padding: 1rem 0;
+  z-index: 100;
+}
+
+.mobile-menu.open {
+  display: flex;
+}
+
+.mobile-menu li {
+  color: #ffffffb3;
+  font-size: 18px;
+  padding: 12px 24px;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+.mobile-menu li:not(:last-child){
+    border-bottom: 0.5px solid #ffffffb3;
+}
+.mobile-menu li:hover {
+    color: #00C8FF;
+    transform: translateY(-4%);
+}
+
+.mobile-menu li:hover {
+  color: #00c8ff;
+}
+@media (min-width:775px) {
+  nav ul li:not(:last-child){
+    margin-right:var(--space-lg) ;
+  }
+  
+}
+@media (min-width:501px) and (max-width:1024px) {
+  .Hamburger {
+   display: block; 
+        position: relative;
+        left: 0;
+        top: 2px;
+  }
+
+  .DesktopNav {
+    display: none; /* يختفي على موبايل */
+  }
+
+  header {
+    position: fixed;
+  }
+}
+@media (max-width:500px) {
+  .Hamburger {
+   display: block; 
+        position: relative;
+        left: 0;
+        top: 2px;
+  }
+   .DesktopNav {
+    display: none; /* يختفي على موبايل */
+  }
+  header .container {
+    overflow: hidden;
+  }
+  .Logo {
+    font-size: 26px;
+    
+
+  }
+}
+@media (min-width: 1024) {
+  .mobile-menu {
+    display: none !important;
+  }
+}

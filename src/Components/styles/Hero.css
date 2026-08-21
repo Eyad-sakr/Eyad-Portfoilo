@@ -1,0 +1,163 @@
+
+.Hero {
+    color: white;
+      
+    padding-top:70px ;
+    position: relative;
+    padding-bottom: 90px;
+      
+}
+
+
+.Hero .container {
+overflow-X: visible !important;
+}
+
+.Hero h1 {
+  text-align: center;
+  font-size: clamp(30px,6vw,110px);
+  font-family: 'syne',sans-serif;
+  font-weight: 800;
+  margin-bottom: 20px;
+  
+}
+.Hero h1 span:first-of-type {
+    display: block;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--contact-cyan) ;
+    letter-spacing: 1px;
+    font-weight: bold;
+      text-shadow: 0 0 36px rgba(34, 211, 238, 0.14);
+
+}
+.Hero h1 span:last-of-type{
+    color: var(--contact-cyan);
+  text-shadow: 0 0 36px rgba(34, 211, 238, 0.14);
+}
+/* skills */
+.Skills {
+    font-weight: 800;
+    font-size: 3.5vh;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.Skills .DollarSign{
+    font-size: 25px;
+    color: var(--contact-cyan);
+}
+.Skills .Delete {
+    color: var(--contact-cyan) ;
+    animation: Blink 0.8s  infinite;
+
+}
+/* animation */
+@keyframes Blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.Hero p {
+   text-align: center;
+max-width: 550px;
+margin: 0 auto 48px;
+font-size: var(--space-lg);
+color: rgba(255, 255, 255, 0.48);
+}
+.Hero .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.Hero button  {
+   
+    background-color: transparent;
+    color: rgb(0, 200, 255);
+    margin-right: var(--space-lg);
+    padding: 15px 36px;
+    border-radius: 8px;
+    border: 1px solid rgb(0, 200, 255);
+    background: rgba(0, 200, 255, 0.12);
+    font-family: "Space Mono", monospace;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.Hero button:hover{
+    box-shadow:0 0 10px rgba(0,200,255,.5),
+  0 0 20px rgba(0,200,255,.5),
+  0 0 40px rgba(0,200,255,.7),
+  inset 0 0 10px rgba(0,200,255,0.2);
+
+}
+.Scroll {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+    font-size: 10px;
+    margin-top: 70px;
+    margin-bottom: 26px;
+   
+}
+.Scroll .ScrollLine {
+width: 1px;
+height: 60px;
+background:linear-gradient(transparent,rgb(0,200,255));
+margin-bottom: 15px;
+ animation: ScrollLine 2s ease both  infinite;
+}
+
+.Scroll span {
+    letter-spacing: 0.2em;
+    font-size: 12px;
+    color: #00C8FF;
+    
+}
+/* Hero Responsive */
+
+@media (min-width: 501px) and (max-width: 1025px) {
+    .Hero {
+        background-image:
+     linear-gradient(rgba(0, 212, 255, 0.15) 0.5px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 212, 255, 0.15) 0.5px, transparent 1px) ;
+    }
+}
+@media (min-width: 1026px)and(max-width:1440) {
+    
+    .Hero h1 {
+        font-size: 90px;
+    }
+}
+
+
+@media (max-width: 500px) {
+  .Hero {
+    padding-bottom: 60px;
+  }
+    .Hero .buttons {
+        margin-left: 35px;
+    }
+    .Hero button:last-child {
+        line-height: 1.5;
+    }
+}
+/* animation */
+@keyframes ScrollLine {
+      0%{opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(8px);
+    }
+}

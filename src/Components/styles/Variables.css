@@ -1,0 +1,168 @@
+:root{
+   
+ 
+ 
+ 
+  --bg-primary:    #0b0b0b;   
+  --bg-secondary:  #111111;   
+  --bg-tertiary:   #151515;   
+ 
+ 
+  /* ──────────────────────────────────────────────────────────
+     ACCENT — لون التمييز (السيان/الأزرق الفاتح)
+     ده اللون الرئيسي للتصميم — بيظهر على الأزرار والبوردرات والنصوص المهمة
+     بنعمله درجات شفافية مختلفة لاستخدامات مختلفة
+  ────────────────────────────────────────────────────────── */
+ 
+  --accent:        rgb(0, 200, 255);        /* اللون الكامل — للنصوص والبوردرات الواضحة */
+  --accent-10:     rgba(0, 200, 255, 0.10); /* 10% شفافية — خلفية الأزرار */
+  --accent-07:     rgba(0, 200, 255, 0.07); /* 7%  شفافية — خلفية الـ tags */
+  --accent-06:     rgba(0, 200, 255, 0.06); /* 6%  شفافية — خلفية الـ badge */
+  --accent-05:     rgba(0, 200, 255, 0.05); /* 5%  شفافية — الـ orbs في الهيرو */
+  --accent-04:     rgba(0, 200, 255, 0.04); /* 4%  شفافية — inset glow خفيف جداً */
+ 
+ 
+  /* ──────────────────────────────────────────────────────────
+     BORDER GLOW — إطار التوهج
+     البوردر بيتغير من خافت لمضيء عند الـ hover
+  ────────────────────────────────────────────────────────── */
+ 
+  --border-default: rgba(0, 200, 255, 0.25); 
+  --border-hover:   rgb(0, 200, 255);         
+  --border-subtle:  rgba(0, 200, 255, 0.15);  
+  --border-faint:   rgba(0, 200, 255, 0.10); 
+  --border-03:      rgba(0, 200, 255, 0.03);
+ 
+  /* ──────────────────────────────────────────────────────────
+     GLOW & SHADOW — التوهج والظل
+     بنستخدم box-shadow عشان نعمل تأثير النيون حول العناصر
+  ────────────────────────────────────────────────────────── */
+ 
+  --glow-sm:           0 0 8px  rgb(0, 200, 255);         
+  --glow-md:           0 0 16px rgb(0, 200, 255);         
+  --glow-lg:           0 0 30px rgba(0, 200, 255, 0.18);   
+  --glow-xl:           0 0 40px rgba(0, 200, 255, 0.25);   
+  --glow-card-hover:   0 0 30px rgba(0, 200, 255, 0.18),  
+                       inset 0 0 30px rgba(0, 200, 255, 0.04); 
+  --shadow-card:       0 4px  24px rgba(0, 0, 0, 0.40);   
+  --shadow-card-hover: 0 20px 60px rgba(0, 0, 0, 0.50);   
+ 
+ 
+ --contact-bg: #14171c;
+  --contact-panel: #0a121c;
+  --contact-panel-2: #0b1017;
+  --contact-input-bg: #0d151f;
+ 
+  --contact-cyan: #22d3ee;
+  --contact-cyan-soft: rgba(34, 211, 238, 0.55);
+  --contact-cyan-dim: rgba(34, 211, 238, 0.14);
+  --contact-cyan-faint: rgba(34, 211, 238, 0.06);
+ 
+  --contact-border: rgba(148, 163, 184, 0.12);
+  --contact-border-hover: rgba(34, 211, 238, 0.32);
+ 
+  --contact-text-primary: #f1f5f9;
+  --contact-text-secondary: #8a97a8;
+  --contact-text-muted: #5b6674;
+  --contact-text-label: #6fd8ea;
+ 
+  --contact-radius: 16px;
+  --contact-radius-sm: 10px;
+ 
+  --contact-ease: cubic-bezier(0.22, 1, 0.36, 1);
+ 
+ 
+  --text-primary:      rgba(255, 255, 255, 1.00)
+  --text-secondary:    rgba(255, 255, 255, 0.70)
+  --text-muted:        rgba(255, 255, 255, 0.55)
+  --text-faint:        rgba(255, 255, 255, 0.45)
+  --text-dim:          rgba(255, 255, 255, 0.30)
+  --text-accent:       rgb(0, 200, 255);         
+  --text-accent-soft:  rgba(0, 200, 255, 0.70); 
+  --text-accent-muted: rgba(0, 200, 255, 0.60); 
+  --text-accent-faint: rgba(0, 200, 255, 0.50); 
+ 
+ 
+ 
+  --font-display: 'Syne', sans-serif;     
+  --font-mono:    'Space Mono', monospac
+  --font-body:    'DM Sans', sans-serif;    
+ 
+  --text-xs:   11px;  
+  --text-sm:   13px;
+  --text-base: 15px; 
+  --text-md:   16px; 
+  --text-lg:   18px;  
+  --text-xl:   20px; 
+  --text-2xl:  24px;  
+  --text-3xl:  32px;  
+  --text-4xl:  52px;  
+ 
+  --tracking-wide:    0.05em;  
+  --tracking-wider:   0.08em;  
+  --tracking-widest:  0.15em;  
+ 
+ 
+ 
+ 
+  --space-xs:      8px;    
+  --space-sm:      12px;   
+  --space-md:      16px;   
+  --space-lg:      24px;  
+  --space-xl:      36px;  
+  --space-2xl:     48px;  
+  --space-3xl:     72px;  
+  --space-section: 120px;  
+ 
+ 
+ 
+ 
+  --radius-sm:   10px;   
+  --radius-md:   12px;  
+  --radius-lg:   16px;   
+  --radius-xl:   20px;   
+  --radius-2xl:  24px;   
+  --radius-pill: 100px; 
+ 
+ 
+  --transition-fast:   all 0.25s ease;                        
+  --transition-base:   all 0.35s ease;                          
+  --transition-slow:   all 0.4s cubic-bezier(0.4, 0, 0.2, 1); 
+  --transition-reveal: opacity 0.7s ease, transform 0.7s ease; 
+ 
+ 
+  
+ 
+  --z-bg:      0;   
+  --z-content: 1;    
+  --z-overlay: 98;   
+  --z-menu:    99;  
+  --z-navbar:  100;  
+ 
+  
+ 
+  --grid-color: red; 
+  --grid-size:  60px;                  
+ 
+  
+ 
+  --progress-track: rgba(255, 255, 255, 0.06);             
+  --progress-fill:  linear-gradient(90deg, rgb(0,200,255), rgba(0,200,255,0.4)); 
+  --progress-glow:  0 0 8px rgba(0, 200, 255, 0.5);                  
+ 
+ 
+  
+ 
+  --navbar-height: 70px;                  
+  --navbar-bg:     rgba(10, 10, 10, 0.85);  
+  --navbar-border: rgba(0, 200, 255, 0.10); 
+ 
+ 
+  
+ 
+  --menu-bg:     rgba(17, 17, 17, 0.97); 
+  --menu-border: rgba(0, 200, 255, 0.15); 
+  --menu-width:  320px;                  
+ 
+
+}

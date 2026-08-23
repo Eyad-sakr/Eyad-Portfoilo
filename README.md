@@ -1,18 +1,50 @@
-# React + Vite
+# Eyad Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal developer portfolio built with React and TypeScript, featuring a dark cyberpunk-inspired design.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React
+- TypeScript
+- Vite
+- React Hook Form + Zod (form validation)
+- Web3Forms (contact form submission)
+- Lucide React / React Icons
 
-## React Compiler
+## Sections
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- - \*Hero\*\* — intro with a typewriter-style role animation
+- **Services** — overview of offered services
+- **About Me** — bio and quick stats
+- **Skills** — tech stack showcase
+- **Projects** — featured projects with live demo and GitHub links
+- - **Contact** — fully functional contact form (powered by Web3Forms) with validation, plus direct email / GitHub / LinkedIn links
 
-Note: This will impact Vite dev & build performances.
+## Getting Started
 
-## Expanding the ESLint configuration
+Clone the repo and install dependencies:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+git clone https://github.com/eyads2kr/Eyad-portfolio.git
+cd Eyad-portfolio
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+## Author
+
+**Eyad Sakr**
+
+- GitHub: [@Eyad-sakr](https://github.com/Eyad-sakr)
+- LinkedIn: [eyad-sakr](https://www.linkedin.com/in/eyad-sakr-b21375318)

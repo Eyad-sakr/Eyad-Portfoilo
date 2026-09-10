@@ -1,26 +1,7 @@
-.glass-card {
-  background:       var(--glass-bg);      /* خلفية شفافة 3% */
-  border:           1px solid var(--border-default); /* بوردر سيان خافت */
-  border-radius:    var(--radius-xl);     /* زوايا مستديرة 20px */
-  backdrop-filter:  var(--glass-blur);    /* الضبابية — يخلي الخلفية تتشاش */
-  box-shadow:       var(--shadow-card);   /* ظل خفيف */
-  transition:       var(--transition-base); /* الانتقال عند hover */
-}
- 
-.glass-card:hover {
-  border-color: var(--border-hover);      /* البوردر يضيء */
-  box-shadow:   var(--glow-card-hover);   /* التوهج يظهر */
-}
-.grid-bg {
- position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  background-image:
-    linear-gradient(var(--grid-color) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
-  background-size: var(--grid-size) var(--grid-size);
-  animation: gridPulse 7s ease-in-out infinite;
+
+/* ============================== Responsive ============================== */
+@media (max-width: 500px) {
+
 }
 .fade-up {
   opacity: 0;

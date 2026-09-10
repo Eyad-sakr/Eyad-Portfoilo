@@ -1,6 +1,6 @@
 import AboutContent from "./AboutContent"
 import AboutBoxImg from "./AboutBoxImg"
-import FadeUp from "../FadeUp"
+import FadeUp from "../Animation/FadeUp"
 
 function AboutMe() {
   return (

@@ -1,7 +1,6 @@
 #Services {
    padding: 90px 5%;
     text-align: left;
-    font-family: "syan", sans-serif;
     color: white;
     /* background-color: var(--bg-primary) ; */
 }
@@ -9,7 +8,6 @@
     margin-bottom: 72px;
 }
 #Services .Services-Heading h1 {
-    font-family: 'syne',sans-serif;
   font-size: clamp(20px, 6vw, 38px);
   font-weight: 800;
   margin-top: 12px;
@@ -32,16 +30,21 @@
     gap: 15px;
 }
 #Services .services-Cards .Service-Card {
-  background: #090d13;
   border: 1px solid rgba(0, 229, 255, 0.12);
   border-radius: 12px;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
   transition: all 0.3s ease;
   position: relative;
-  overflow: hidden;
   padding: 25px 25px;
   display: flex;
   flex-direction: column;
+   isolation: isolate;
+  overflow: hidden;
+  backdrop-filter: blur(5px) saturate(125%);
+  -webkit-backdrop-filter: blur(18px) saturate(125%);
+  box-shadow:
+    inset 0 1px 0 rgba(150, 225, 255, 0.10),
+    inset 0 0 30px rgba(0, 100, 180, 0.05),
+    0 12px 35px rgba(0, 0, 0, 0.30);
 }
 
 #Services .services-Cards .Service-Card::before {
@@ -60,6 +63,8 @@
   border-color: rgba(34, 211, 238, 0.4) !important;
   box-shadow: 0 8px 32px rgba(34, 211, 238, 0.08), 0 4px 24px rgba(0, 0, 0, 0.5) !important;
   transform: translateY(-4px);
+     backdrop-filter: blur(10px) saturate(125%)!important;
+
 }
 
 .Service-Card:hover::before {
@@ -86,7 +91,6 @@
 #Services .services-Cards .Service-Card .Service-content {
     display: flex;
     flex-direction: column;
-    gap: 55px;
 }
 #Services .services-Cards .Service-Card .Service-content .Description P {
     min-height: 160px;
@@ -105,7 +109,7 @@
 #Services .services-Cards .Service-Card .Service-content  .Tags {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 7px;
     flex-wrap: wrap;
 }
 #Services .services-Cards .Service-Card .Service-content .Tags span {
@@ -123,17 +127,27 @@ border-radius: 20px;
 
 }
 
-#Services .services-Cards .Service-Card .Service-end {
- margin-top: 20px;
+#Services .services-Cards .Service-Card .Service-end a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #082830;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+     margin-top: 20px;
  margin-left: 25px;
 }
-#Services .services-Cards .Service-Card .Service-end button {
-    background-color: transparent;
-    color: #22d3ee;
-    border: 1px solid #082830;
-    border-radius: 20px;
-    padding-inline: 10px;
-    padding-block: 9px;
+
+#Services .services-Cards .Service-Card .Service-end a:hover {
+    border-color: #22d3ee;
+    background-color: rgba(34, 211, 238, 0.08);
 }
 
-
+#Services .services-Cards .Service-Card .Service-end a svg {
+    width: 18px;
+    height: 18px;
+    color: #22d3ee;
+}

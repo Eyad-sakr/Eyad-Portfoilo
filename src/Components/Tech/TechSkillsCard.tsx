@@ -1,4 +1,4 @@
-import FadeUp from "../FadeUp";
+import FadeUp from "../Animation/FadeUp";
 
 function SkillsCard() {
     const SkillsTech =[
@@ -16,9 +16,10 @@ function SkillsCard() {
     ]
   return (
     <div className="Card-Container">
+
        {SkillsTech.map(skill=>(
-        <FadeUp>
-         <div className="Skill-Card" key={skill.id}>
+        <FadeUp key={skill.id}>
+         <div className="Skill-Card glass-panel glass-panel-purple" >
           <div className="icon">
             <img src={skill.icon} alt="Skill image" />
           </div>

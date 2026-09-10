@@ -84,9 +84,8 @@
  
  
  
-  --font-display: 'Syne', sans-serif;     
-  --font-mono:    'Space Mono', monospac
-  --font-body:    'DM Sans', sans-serif;    
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: "General Sans" , sans-serif;
  
   --text-xs:   11px;  
   --text-sm:   13px;

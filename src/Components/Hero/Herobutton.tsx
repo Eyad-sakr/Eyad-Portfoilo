@@ -1,8 +1,8 @@
 
 function Herobutton() {
   return (<div className="buttons">
-  <button>View Project</button>
-  <button>Contact</button>
+  <a href="#Projects">View Project</a>
+  <a href="#Contact">Contact</a>
 </div>
   )
 }

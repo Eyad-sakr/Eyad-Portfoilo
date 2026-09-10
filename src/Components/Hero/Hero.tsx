@@ -1,6 +1,6 @@
 import Skills from "./Skills"
 import Herobutton from "./Herobutton"
-import FadeUp from "../FadeUp"
+import FadeUp from "../Animation/FadeUp"
 function Hero() {
   return (
     

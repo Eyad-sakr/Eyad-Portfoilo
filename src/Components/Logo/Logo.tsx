@@ -1,11 +1,11 @@
+import { Link } from "react-router-dom"
 
 function Logo() {
   return (
-    <div className="Logo">
+    <Link to="/" className="Logo">
         <span>&lt;</span> 
             Eyad<span>Dev /&gt;</span>
-            
-    </div>
+    </Link>
   )
 }
 

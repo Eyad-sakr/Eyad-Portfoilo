@@ -8,7 +8,7 @@ function HeaderNav() {
          <li> <a href="#Skills">Skills</a></li>
          <li> <a href="#Projects">  Projects</a></li>
          <li> <a href="#Contact"> Contact</a></li>
-            <button>Hire Me</button>
+            <a href="#Contact"><button>ِHire Me</button></a>
         </ul>
     </nav>
   )

@@ -41,7 +41,7 @@ export default function Contact() {
  
   
   return (
-    <section className="contact-section" id="contact">
+    <section className="contact-section" id="Contact">
       <div className="contact-Heading">
          <span className="contact-eyebrow">// Get In Touch</span>
 
@@ -64,7 +64,7 @@ export default function Contact() {
               {CONTACT_LINKS.map(({ id, label, value, href, icon: Icon }) => (
                 <a
                   key={id}
-                  className="contact-card"
+                  className="contact-card glass-card"
                   href={href}
                   target={id === "email" ? undefined : "_blank"}
                   rel={id === "email" ? undefined : "noreferrer"}

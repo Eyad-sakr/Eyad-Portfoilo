@@ -1,4 +1,4 @@
-import FadeUp from "../FadeUp"
+import FadeUp from "../Animation/FadeUp"
 import ProjectsCards from "./ProjectsCards"
 
 function Projects() {

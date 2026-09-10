@@ -1,6 +1,6 @@
  import { GoArrowUpRight } from "react-icons/go";
 import { GoArrowRight } from "react-icons/go";
-import FadeUp from "../FadeUp";
+import FadeUp from "../Animation/FadeUp";
 
  interface Project {
     id:number;

@@ -1,14 +1,15 @@
+import { useTranslation } from "react-i18next";
 import FadeUp from "../Animation/FadeUp";
 import AboutStats from "./AboutStats";
+
 function AboutContent() {
+   const { t } = useTranslation();
   return (
     <div className="Content">
       <FadeUp>
-      <span className="Main-Heading">// ABOUT ME</span>
-        <h1>Passion Meets <span>Precision</span></h1>
-        <p>I’m a Front-End Developer focused on building modern, responsive, and visually polished web interfaces using React,  and modern web technologies.
-I enjoy transforming ideas and designs into scalable, reusable, and interactive user experiences while maintaining clean code and best development practices.
-My goal is to build fast, accessible, and engaging web applications with smooth animations, responsive layouts, and attention to every detail that improves the user experience.</p>
+      <span className="Main-Heading">{t('about.eyebrow')}</span>
+        <h1>{t('about.headingPart1')}  {t('about.headingPart2')} <span>{t('about.headingPart3')}</span></h1>
+        <p>{t('about.bio')}</p>
 </FadeUp>
     <AboutStats/>
     </div>

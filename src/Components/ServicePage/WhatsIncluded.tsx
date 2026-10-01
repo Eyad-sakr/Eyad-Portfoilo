@@ -1,10 +1,12 @@
- import type { ServiceHeroProps } from "./ServiceHero"; 
+ import { useTranslation } from "react-i18next";
+import type { ServiceHeroProps } from "./ServiceHero"; 
 function WhatsIncluded({service}:ServiceHeroProps) {
+  const {t} = useTranslation();
   return (
      <div className="Whats-Included">
   <div className="Whats-Heading">
-    <h5>// What's Included</h5>
-    <h1>What's <span>Included</span></h1>
+    <h5>{t("services.whatsIncluded.label")}</h5>
+    <h1>{t("services.whatsIncluded.title1")} <span>{t("services.whatsIncluded.title2")}</span></h1>
   </div>
   <div className="Whats-Included-Cards">
     {service.whatsIncluded.map((card) => (

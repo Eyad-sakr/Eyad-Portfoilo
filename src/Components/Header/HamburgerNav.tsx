@@ -1,23 +1,31 @@
-import { RxHamburgerMenu } from "react-icons/rx";
+import { useTranslation } from "react-i18next";
+import HeaderCta from "./HeaderCta";
 interface proptype {
   isOpen:boolean,
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 function HamburgerNav({ isOpen, setIsOpen }:proptype) {
+      const {t} = useTranslation();
+  
   return (
     <>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="Hamburger"
+        className={`Hamburger ${isOpen ? "active" : ""}`}
+        aria-label="Toggle menu"
+        aria-expanded={isOpen}
       >
-        <RxHamburgerMenu />
+        <span />
+        <span />
+        <span />
       </button>
       <ul className={`mobile-menu ${isOpen ? "open" : ""}`}>
-        <li>Services</li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <li>{t("header.services")}</li>
+        <li>{t("header.about")}</li>
+        <li>{t("header.skills")}</li>
+        <li>{t("header.projects")}</li>
+        <li>{t("header.contact")}</li>
+        <HeaderCta/>
       </ul>
     </>
   );

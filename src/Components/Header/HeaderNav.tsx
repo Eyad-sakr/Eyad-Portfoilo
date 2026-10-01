@@ -1,17 +1,35 @@
- 
+import { useTranslation } from "react-i18next";
+import HeaderCta from "./HeaderCta";
+
 function HeaderNav() {
+  const { t } = useTranslation();
+
   return (
     <nav className="DesktopNav">
-        <ul>
-         <li> <a href="#Services">  Services</a></li>
-         <li> <a href="#About">  About</a></li>
-         <li> <a href="#Skills">Skills</a></li>
-         <li> <a href="#Projects">  Projects</a></li>
-         <li> <a href="#Contact"> Contact</a></li>
-            <a href="#Contact"><button>ِHire Me</button></a>
-        </ul>
+      <ul>
+        <li>
+          <a href="#Services">{t("header.services")}</a>
+        </li>
+
+        <li>
+          <a href="#About">{t("header.about")}</a>
+        </li>
+
+        <li>
+          <a href="#Skills">{t("header.skills")}</a>
+        </li>
+
+        <li>
+          <a href="#Projects">{t("header.projects")}</a>
+        </li>
+
+        <li>
+          <a href="#Contact">{t("header.contact")}</a>
+        </li>
+       <HeaderCta/>
+      </ul>
     </nav>
-  )
+  );
 }
 
-export default HeaderNav
+export default HeaderNav;

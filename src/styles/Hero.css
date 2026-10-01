@@ -1,58 +1,61 @@
-
 .Hero {
     color: white;
-      
-    padding-top:70px ;
+    padding-block-start: 70px;
     position: relative;
-    padding-bottom: 90px;
-      
+    padding-block-end: 90px;
 }
-
 
 .Hero .container {
-overflow-X: visible !important;
+    overflow-x: visible !important;
 }
 
+/* Main Heading */
 .Hero h1 {
-  text-align: center;
-  font-size: clamp(40px,6vw,110px);
-  font-weight: 800;
-  margin-bottom: 20px;
-  
+    text-align: center;
+    font-size: clamp(40px, 6vw, 110px);
+    font-weight: 800;
+    margin-bottom: 20px;
 }
+
 .Hero h1 span:first-of-type {
     display: block;
     color: transparent;
-    -webkit-text-stroke: 1px var(--contact-cyan) ;
+    -webkit-text-stroke: 1px var(--contact-cyan);
     letter-spacing: 1px;
     font-weight: bold;
-      text-shadow: 0 0 36px rgba(34, 211, 238, 0.14);
+    text-shadow: 0 0 36px rgba(34, 211, 238, 0.14);
+}
 
-}
-.Hero h1 span:last-of-type{
+.Hero h1 span:last-of-type {
     color: var(--contact-cyan);
-  text-shadow: 0 0 36px rgba(34, 211, 238, 0.14);
+    text-shadow: 0 0 36px rgba(34, 211, 238, 0.14);
 }
-/* skills */
+
+/* Skills Section */
 .Skills {
     font-weight: 600;
-  font-size: clamp(1.2rem, 4vw, 2rem);
+    font-size: clamp(1.2rem, 4vw, 2rem);
     text-align: center;
     margin-bottom: 20px;
-
 }
-.Skills .DollarSign{
-  font-size: clamp(1.5rem, 4vw, 2rem);
+
+.Skills .DollarSign {
+    font-size: clamp(1.5rem, 4vw, 2rem);
     color: var(--contact-cyan);
 }
-.Skills .Delete {
-    color: var(--contact-cyan) ;
-    animation: Blink 0.8s  infinite;
-      font-size: clamp(1.5rem, 4vw, 2rem);
 
-
+.Skills .Words {
+    color: white;
 }
-/* animation */
+
+.Skills .Delete {
+    color: var(--contact-cyan);
+    animation: Blink 0.8s infinite;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    margin-inline-start: 4px;
+}
+
+/* Blinking Animation */
 @keyframes Blink {
     0% {
         opacity: 1;
@@ -65,101 +68,141 @@ overflow-X: visible !important;
     }
 }
 
+/* Description Text */
 .Hero p {
-   text-align: center;
-max-width: 550px;
-margin: 0 auto 48px;
-font-size: var(--space-lg);
-color: rgba(255, 255, 255, 0.48);
+    text-align: center;
+    max-width: 550px;
+    margin: 0 auto 48px;
+    font-size: var(--space-lg);
+    color: rgba(255, 255, 255, 0.48);
 }
+
+/* CTA Buttons */
 .Hero .buttons {
     display: flex;
     justify-content: center;
     gap: 16px;
+    flex-wrap: wrap;
 }
-.Hero a  {
-   
+
+.Hero a {
     background-color: transparent;
     color: rgb(0, 200, 255);
-    margin-right: var(--space-lg);
     padding: 15px 36px;
     border-radius: 8px;
     border: 1px solid rgb(0, 200, 255);
     background: rgba(0, 200, 255, 0.12);
     font-family: "Space Mono", monospace;
-    font-size: 15px;
+    font-size: clamp(13px, 1.5vw, 15px);
     font-weight: 700;
     letter-spacing: 0.08em;
     cursor: pointer;
     transition: 0.3s;
     text-decoration: none;
+    white-space: nowrap;
 }
-.Hero a:hover{
-    box-shadow:0 0 10px rgba(0,200,255,.5),
-  0 0 20px rgba(0,200,255,.5),
-  0 0 40px rgba(0,200,255,.7),
-  inset 0 0 10px rgba(0,200,255,0.2);
 
+.Hero a:hover {
+    box-shadow: 0 0 10px rgba(0, 200, 255, 0.5),
+                0 0 20px rgba(0, 200, 255, 0.5),
+                0 0 40px rgba(0, 200, 255, 0.7),
+                inset 0 0 10px rgba(0, 200, 255, 0.2);
 }
+
+/* Scroll Animation Section */
 .Scroll {
-   display: flex;
-   align-items: center;
-   flex-direction: column;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     font-size: 10px;
-    margin-top: 70px;
-    margin-bottom: 26px;
-   
+    margin-block-start: 70px;
+    margin-block-end: 26px;
 }
+
 .Scroll .ScrollLine {
-width: 1px;
-height: 60px;
-background:linear-gradient(transparent,rgb(0,200,255));
-margin-bottom: 15px;
- animation: ScrollLine 2s ease both  infinite;
+    width: 1px;
+    height: 60px;
+    background: linear-gradient(transparent, rgb(0, 200, 255));
+    margin-bottom: 15px;
+    animation: ScrollLine 2s ease both infinite;
 }
 
 .Scroll span {
     letter-spacing: 0.2em;
     font-size: 12px;
     color: #00C8FF;
-    
 }
-/* Hero Responsive */
 
-@media (min-width: 501px) and (max-width: 1025px) {
-    .Hero {
-        background-image:
-     linear-gradient(rgba(0, 212, 255, 0.15) 0.5px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 212, 255, 0.15) 0.5px, transparent 1px) ;
+/* Scroll Animation */
+@keyframes ScrollLine {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(8px);
     }
 }
-@media (min-width: 1026px)and(max-width:1440) {
-    
+
+/* ============ Tablet: 501px - 1024px ============ */
+@media (min-width: 501px) and (max-width: 1024px) {
+    .Hero {
+        background-image:
+            linear-gradient(rgba(0, 212, 255, 0.15) 0.5px, transparent 1px),
+            linear-gradient(90deg, rgba(0, 212, 255, 0.15) 0.5px, transparent 1px);
+    }
+
+    .Hero h1 {
+        font-size: clamp(32px, 5vw, 60px);
+    }
+
+    .Hero .buttons {
+        gap: 12px;
+    }
+
+    .Hero a {
+        padding: 12px 24px;
+        font-size: 13px;
+    }
+}
+
+/* ============ Desktop Large: 1026px - 1440px ============ */
+@media (min-width: 1026px) and (max-width: 1440px) {
     .Hero h1 {
         font-size: 90px;
     }
 }
 
-
+/* ============ Mobile: up to 500px ============ */
 @media (max-width: 500px) {
-  .Hero {
-    padding-bottom: 60px;
-  }
-    .Hero .buttons {
-        margin-left: 35px;
-    }
-    .Hero button:last-child {
-        line-height: 1.5;
-    }
-}
-/* animation */
-@keyframes ScrollLine {
-      0%{opacity: 0;
-        transform: translateY(-100%);
+    .Hero {
+        padding-block-end: 60px;
     }
 
-    100%{
-        opacity: 1;
-        transform: translateY(8px);
+    .Hero h1 {
+        font-size: clamp(28px, 5vw, 50px);
+    }
+
+    .Hero .buttons {
+        width: 100%;
+        gap: 8px;
+    }
+
+    .Hero a {
+        flex: 1;
+        padding: 12px 16px;
+        font-size: 12px;
+        text-align: center;
+        min-width: 0;
+    }
+
+    .Hero p {
+        font-size: 14px;
+        padding: 0 12px;
+    }
+
+    .Scroll {
+        margin-block-start: 50px;
     }
 }

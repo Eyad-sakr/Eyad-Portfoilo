@@ -1,11 +1,13 @@
- import type { ServiceHeroProps } from "./ServiceHero"; 
+ import { useTranslation } from "react-i18next";
+import type { ServiceHeroProps } from "./ServiceHero"; 
 
 function HowIWork({service}:ServiceHeroProps) {
+  const {t} = useTranslation();
   return (
     <div className="How-I-Work">
         <div className="How-I-Work-Heading">
-    <h5>// Development Process</h5>
-    <h1>How I  <span>Work</span></h1>
+    <h5>{t("services.developmentProcess.label")}</h5>
+    <h1>{t("services.developmentProcess.title1")}  <span>{t("services.developmentProcess.title2")}</span></h1>
   </div>
   <div className="TimeLine">
     {service.process.map((card)=>(

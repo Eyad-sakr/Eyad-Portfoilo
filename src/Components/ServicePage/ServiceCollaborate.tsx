@@ -1,8 +1,9 @@
+import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
 
 function ServiceCollaborate() {
+  const {t} = useTranslation();
   const navigate = useNavigate();
-
   const handleContactClick = () => {
     navigate('/', { state: { scrollTo: 'contact' } });
   };
@@ -10,9 +11,9 @@ function ServiceCollaborate() {
   return (
     <div className="Collaborate">
       <div className="Collaborate-Heading">
-        <h5>// Have a Project in Mind?</h5>
-        <h1>Let's Build Something Great Together</h1>
-        <p>Have an idea for a website? Let's turn it into a clean, responsive and professional digital experience.</p>
+        <h5>{t("services.Collaborate.label")}</h5>
+        <h1>{t("services.Collaborate.title")}</h1>
+        <p>{t("services.Collaborate.description")}</p>
       </div>
       <div className="Collaborate-button">
         <Link 
@@ -23,7 +24,7 @@ function ServiceCollaborate() {
           }}
           className="collaborate-button"
         >
-          Let's Collaborate
+          {t("services.Collaborate.button")}
         </Link>     
       </div>
     </div>

@@ -1,6 +1,6 @@
 #Skills {
     padding: 90px 5%;
-    text-align: left;
+    text-align: start;
     font-family: "syan", sans-serif;
     /* background-color: #111111; */
      isolation: isolate;
@@ -50,7 +50,7 @@
     transform: none;
     display: flex;
     flex-direction: column;
-    text-align: left;
+    text-align: start;
   border: 1px solid rgba(255, 255, 255, 0.06);
   transition: all 0.3s ease;
   position: relative;

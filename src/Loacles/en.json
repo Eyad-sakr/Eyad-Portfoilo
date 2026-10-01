@@ -1,0 +1,391 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact",
+    "hireMe": "Hire Me",
+    "BackToHome":"Back To Home"
+  },
+   "hero": {
+    "headingPart1": "Crafting",
+    "headingPart2": "Digital",
+    "headingPart3": "Experiences",
+    "bio": "Frontend Developer focused on crafting premium, high-performance web experiences with clean code, smooth interactions, and pixel-perfect design.",
+    "viewProjects": "View Project",
+    "contactMe": "Contact",
+    "scroll": "Scroll"
+  },
+  "skills": {
+    "words": [
+      "Frontend Developer",
+      "React Developer",
+      "Building Modern UI",
+      "Scalable Frontend Solutions"
+    ]
+  },  "services": {
+     "notFound": "Service Not Found",
+    "eyebrow": "// WHAT I DO",
+    "heading": "Turning Ideas Into",
+    "headingAccent": "Digital Products",
+    "viewProjects":"View Projects",
+    "StartProject":"Start Project",
+    "whatIBuild": {
+    "label": "// What I Build",
+    "title1": "What I ",
+    "title2": "Build",
+    "description": "From first-time company sites to full brand refreshes, I build web presences that feel credible, load fast, and work everywhere."
+  },
+  "whatsIncluded": {
+    "label": "// What's Included",
+    "title1": "What's",
+    "title2": "Included"
+  },"developmentProcess": {
+    "label": "// Development Process",
+    "title1": "How I ",
+    "title2": "Work"
+  },
+   "Collaborate": {
+    "label": "// Have a Project in Mind?",
+    "title": "Let's Build Something Great Together",
+    "description": "Have an idea for a website? Let's turn it into a clean, responsive and professional digital experience.",
+    "button": "Let's Collaborate"
+  },
+    "website": {
+      "badge": "BUSINESS WEBSITES",
+      "title": "Business Websites Built to Represent",
+      "highlight": "Your Brand",
+      "description": "I build modern, responsive websites that give businesses a clear digital presence and provide a smooth experience across every device.",
+      "tags": [
+        "Responsive Development",
+        "React & TypeScript",
+        "Reusable Components"
+      ],
+
+      "cards": [
+        {
+          "title": "Company Websites",
+          "description": "Clean, structured sites that introduce a business and its services."
+        },
+        {
+          "title": "Business Websites",
+          "description": "Multi-page sites built around clear content hierarchy and navigation."
+        },
+        {
+          "title": "Professional Websites",
+          "description": "Polished, credible interfaces for firms, studios and consultancies."
+        },
+        {
+          "title": "Service-based Websites",
+          "description": "Pages built to explain offerings and turn visitors into leads."
+        },
+        {
+          "title": "Responsive Web Experiences",
+          "description": "Interfaces tuned to feel native on desktop, tablet and mobile."
+        },
+        {
+          "title": "Custom Frontend Interfaces",
+          "description": "Bespoke layouts and components built beyond generic templates."
+        }
+      ],
+
+      "process": [
+        {
+          "title": "Understand",
+          "description": "I start by understanding the business, target users and project requirements."
+        },
+        {
+          "title": "Plan",
+          "description": "I define the structure, content hierarchy and overall interface direction."
+        },
+        {
+          "title": "Build",
+          "description": "I develop the frontend using clean, reusable and maintainable components."
+        },
+        {
+          "title": "Refine",
+          "description": "I test the experience across screen sizes and polish the details before delivery."
+        }
+      ]
+    },
+
+    "landing": {
+      "badge": "LANDING PAGES",
+      "title": "Landing Pages Designed to Convert",
+      "highlight": "Your Visitors",
+      "description": "I turn ideas into focused landing pages with strong visual hierarchy, purposeful interactions, and responsive layouts designed to guide visitors naturally toward the next action.",
+      "tags": [
+        "Conversion-Focused UI",
+        "Responsive Layouts",
+        "Interactive Sections"
+      ],
+
+      "cards": [
+        {
+          "title": "Product Landing Pages",
+          "description": "Single-focus pages built to present one product or service clearly."
+        },
+        {
+          "title": "Campaign Pages",
+          "description": "Pages built around a single call-to-action for marketing campaigns."
+        },
+        {
+          "title": "Waitlist / Launch Pages",
+          "description": "Pre-launch pages built to capture interest and collect signups."
+        },
+        {
+          "title": "Feature Highlight Sections",
+          "description": "Sections built to explain product features in a scannable way."
+        },
+        {
+          "title": "Responsive Hero Sections",
+          "description": "Hero sections tuned to grab attention on every screen size."
+        },
+        {
+          "title": "Custom Animated Sections",
+          "description": "Scroll and interaction-based sections built for engagement."
+        }
+      ],
+
+      "process": [
+        {
+          "title": "Understand",
+          "description": "I start by understanding the goal of the page and who it's speaking to."
+        },
+        {
+          "title": "Plan",
+          "description": "I map out the narrative flow and the single call-to-action it should drive."
+        },
+        {
+          "title": "Build",
+          "description": "I develop the sections using clean, reusable and maintainable components."
+        },
+        {
+          "title": "Refine",
+          "description": "I test conversion paths across devices and polish the details before delivery."
+        }
+      ]
+    },
+
+    "ecommerce": {
+      "badge": "E-COMMERCE FRONTENDS",
+      "title": "Storefronts Built to Turn Browsers Into",
+      "highlight": "Buyers",
+      "description": "I build intuitive storefronts where products are easy to discover, compare, and explore, with thoughtful navigation, filtering, reusable product interfaces, and responsive shopping flows.",
+      "tags": [
+        "Product Experiences",
+        "Search & Filtering",
+        "Responsive Shopping UI"
+      ],
+
+      "cards": [
+        {
+          "title": "Product Listing Pages",
+          "description": "Grid and list views built for fast product discovery."
+        },
+        {
+          "title": "Product Detail Pages",
+          "description": "Pages built to showcase variants, pricing and product info clearly."
+        },
+        {
+          "title": "Cart & Checkout Flows",
+          "description": "Streamlined flows designed to reduce friction at checkout."
+        },
+        {
+          "title": "Search & Filtering",
+          "description": "Filtering systems built to help users narrow down products fast."
+        },
+        {
+          "title": "Responsive Shopping UI",
+          "description": "Storefronts tuned to feel native across desktop, tablet and mobile."
+        },
+        {
+          "title": "Custom Storefront Interfaces",
+          "description": "Bespoke shopping interfaces built beyond generic templates."
+        }
+      ],
+
+      "process": [
+        {
+          "title": "Understand",
+          "description": "I start by understanding the product catalog and shopping behavior."
+        },
+        {
+          "title": "Plan",
+          "description": "I define navigation, filtering logic and the overall shopping flow."
+        },
+        {
+          "title": "Build",
+          "description": "I develop the storefront using clean, reusable and maintainable components."
+        },
+        {
+          "title": "Refine",
+          "description": "I test the shopping flow across screen sizes and polish before delivery."
+        }
+      ]
+    },
+
+    "dashboard": {
+      "badge": "ADMIN DASHBOARDS",
+      "title": "Dashboards Built to Make Data",
+      "highlight": "Actionable",
+      "description": "I develop clear, scalable dashboard interfaces for working with complex data, bringing together analytics, interactive tables, filtering, and structured workflows without overwhelming the user.",
+      "tags": [
+        "Data Visualization",
+        "Tables & Filtering",
+        "Scalable UI"
+      ],
+
+      "cards": [
+        {
+          "title": "Analytics Dashboards",
+          "description": "Overview screens built to surface key metrics at a glance."
+        },
+        {
+          "title": "Data Tables",
+          "description": "Sortable, filterable tables built for managing large datasets."
+        },
+        {
+          "title": "Management Panels",
+          "description": "Interfaces built for managing customers, orders and products."
+        },
+        {
+          "title": "Charts & Visualization",
+          "description": "Charts built to make trends and comparisons easy to read."
+        },
+        {
+          "title": "Responsive Admin UI",
+          "description": "Dashboards tuned to stay usable across desktop, tablet and mobile."
+        },
+        {
+          "title": "Custom Dashboard Interfaces",
+          "description": "Bespoke dashboard layouts built beyond generic admin templates."
+        }
+      ],
+
+      "process": [
+        {
+          "title": "Understand",
+          "description": "I start by understanding the data, workflows and who will use the dashboard."
+        },
+        {
+          "title": "Plan",
+          "description": "I define the information architecture and key views needed."
+        },
+        {
+          "title": "Build",
+          "description": "I develop the dashboard using clean, reusable and maintainable components."
+        },
+        {
+          "title": "Refine",
+          "description": "I test usability across screen sizes and polish the details before delivery."
+        }
+      ]
+    },
+
+    "included": {
+      "responsiveDevelopment": {
+        "title": "Responsive Development",
+        "description": "The website adapts smoothly across desktop, tablet and mobile devices while maintaining a consistent experience."
+      },
+      "modernUI": {
+        "title": "Modern UI",
+        "description": "Clean layouts, clear visual hierarchy and interfaces designed to make the content easy to understand and navigate."
+      },
+      "reusableComponents": {
+        "title": "Reusable Components",
+        "description": "Structured and reusable frontend components that keep the project clean, scalable and easier to maintain."
+      },
+      "performance": {
+        "title": "Performance",
+        "description": "Frontend implementation with attention to performance, usability and smooth interactions."
+      }
+    }
+}, "about": {
+    "eyebrow":"// ABOUT ME",
+    "headingPart1": "Passion",
+    "headingPart2": "Meets",
+    "headingPart3": "Precision",
+    "bio": "I'm a Front-End Developer focused on building modern, responsive, and visually polished web interfaces using React, and modern web technologies. I enjoy transforming ideas and designs into scalable, reusable, and interactive user experiences while maintaining clean code and best development practices. My goal is to build fast, accessible, and engaging web applications with smooth animations, responsive layouts, and attention to every detail that improves the user experience.",
+    "stats": [
+      {
+        "value": "3+",
+        "label": "Projects Built"
+      },
+      {
+        "value": "10+",
+        "label": "Technologies Used"
+      },
+      {
+        "value": "20+",
+        "label": "Reusable Components"
+      }
+    ]
+  },
+  "Techskills": {
+  "eyebrow": "// TECH STACK",
+  "headingPart1": "Skills",
+  "headingPart2": "&",
+  "headingPart3": "Expertise",
+  "items": [
+    { "id": 1, "name": "Html", "icon": "/html5.png", "levelKey": "expert", "level": "Expert" },
+    { "id": 2, "name": "Css", "icon": "/css3.png", "levelKey": "expert", "level": "Expert" },
+    { "id": 3, "name": "JS", "icon": "/js.png", "levelKey": "expert", "level": "Expert" },
+    { "id": 4, "name": "Type Script", "icon": "/typescript.png", "levelKey": "advanced", "level": "Advanced" },
+    { "id": 5, "name": "React", "icon": "/react.png", "levelKey": "advanced", "level": "Advanced" },
+    { "id": 6, "name": "REST APIs", "icon": "/rest-api.png", "levelKey": "intermediate", "level": "Intermediate" },
+    { "id": 7, "name": "Responsive Design", "icon": "/responsive-design.png", "levelKey": "expert", "level": "Expert" },
+    { "id": 9, "name": "C#", "icon": "/c-sharp.png", "levelKey": "familiar", "level": "Familiar" },
+    { "id": 10, "name": "Git/GitHup", "icon": "/git.png", "levelKey": "intermediate", "level": "Intermediate" },
+    { "id": 11, "name": "Tailwind", "icon": "/tailwind.png", "levelKey": "intermediate", "level": "Intermediate" }
+  ]
+},"projects": {
+  "eyebrow": "// SELECTED WORK",
+  "headingPart1": "Featured",
+  "headingPart2": "Projects",
+  "items": [
+    {
+      "id": 1,
+      "title": "NOX E-commerce",
+      "img": "/nox-e-commerce.png",
+      "caption": "A responsive e-commerce platform that simplifies product discovery and online shopping. It provides an intuitive experience for browsing, filtering, and managing products.",
+      "techStack": ["React", "TypeScript", "Vite", "CSS", "React Router"],
+      "github": "https://github.com/Eyad-sakr/NOX-E-commerce.git",
+      "liveDemo": "https://nox-e-commerce-three.vercel.app/"
+    },
+    {
+      "id": 2,
+      "title": "NOX Admin Dashboard",
+      "img": "/nox-admin-dashboard.png",
+      "caption": "A responsive admin dashboard that simplifies business data management and monitoring. It provides clear insights into customers, orders, products, and overall performance.",
+      "techStack": ["React", "TypeScript", "Vite", "CSS", "Recharts"],
+      "github": "https://github.com/Eyad-sakr/Nox-admin-dashboard.git",
+      "liveDemo": "https://nox-admin-dashboard.vercel.app/"
+    }
+  ]
+},"contact": {
+  "eyebrow": "// Get In Touch",
+  "headingPart1": "Let's",
+  "headingPart2": "Collaborate",
+  "intro": "I'm currently open to freelance projects, full-time opportunities, and exciting collaborations. Drop me a message — I respond within 24 hours.",
+  "links": [
+    { "id": "email", "label": "Email" },
+    { "id": "github", "label": "GitHub" },
+    { "id": "linkedin", "label": "LinkedIn" }
+  ],
+  "form": {
+    "nameLabel": "Name",
+    "namePlaceholder": "John Doe",
+    "emailLabel": "Email",
+    "emailPlaceholder": "john@email.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Tell me about your project...",
+    "sendButton": "Send Message",
+    "successMessage": "Message Sent Success!",
+    "errorMessage": "Failed, please try again"
+  }
+}
+
+}

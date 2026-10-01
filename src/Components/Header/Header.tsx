@@ -3,12 +3,14 @@ import { useLocation, Link } from "react-router-dom"
 import Logo from "../Logo/Logo"
 import HeaderNav from "./HeaderNav";
 import HamburgerNav from "./HamburgerNav";
+import { useTranslation } from "react-i18next";
 
 function Header() {
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const [Scrolled, setIsScrolled] = useState(false);
     const location = useLocation();
     const isHome = location.pathname === "/";
+    const {t} = useTranslation();
 
     useEffect(() => {
         const HandelScroll = () => setIsScrolled(window.scrollY > 30);
@@ -26,8 +28,8 @@ function Header() {
                         <HeaderNav />
                     </>
                 ) : (
-                    <Link to="/" className="btn btn-secondary back-home-btn">
-                        ← Back to Home
+                    <Link to="/" className="btn btn-secondary back-home-btn Cta-Button" style={{letterSpacing:"1px" ,fontWeight:"400"}}>
+                       {t("header.BackToHome")}
                     </Link>
                 )}
             </div>

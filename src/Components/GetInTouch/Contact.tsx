@@ -1,67 +1,70 @@
-import { Mail,   ArrowUpRight } from "lucide-react";
-import { VscGithubAlt } from "react-icons/vsc";
-import { CiLinkedin } from "react-icons/ci";
- import GetInTouchForm from "./GetInTouchForm";
-import type { IconType } from "react-icons";
+import { Mail, ArrowUpRight } from "lucide-react"
+import { VscGithubAlt } from "react-icons/vsc"
+import { CiLinkedin } from "react-icons/ci"
+import { useTranslation } from "react-i18next"
+import GetInTouchForm from "./GetInTouchForm"
+import type { IconType } from "react-icons"
 
- 
-interface ContactLink {
-  id: string;
-  label: string;
-  value: string;
-  href: string;
-  icon: typeof Mail|IconType;
+interface ContactLinkStatic {
+  id: string
+  value: string
+  href: string
+  icon: typeof Mail | IconType
 }
 
-export const CONTACT_LINKS: ContactLink[] = [
+interface ContactLinkTranslated {
+  id: string
+  label: string
+}
+
+export const CONTACT_LINKS_STATIC: ContactLinkStatic[] = [
   {
     id: "email",
-    label: "Email",
     value: "edoo55205@gmail.com",
     href: "mailto:edoo55205@gmail.com",
     icon: Mail,
   },
   {
     id: "github",
-    label: "GitHub",
     value: "github.com/Eyad-sakr",
     href: "https://github.com/Eyad-sakr",
     icon: VscGithubAlt,
   },
   {
     id: "linkedin",
-    label: "LinkedIn",
     value: "linkedin.com/in/eyad-sakr",
     href: "https://www.linkedin.com/in/eyad-sakr-b21375318?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
     icon: CiLinkedin,
   },
-];
+]
 
 export default function Contact() {
- 
-  
+  const { t } = useTranslation()
+  const translatedLinks = t('contact.links', { returnObjects: true }) as unknown as ContactLinkTranslated[]
+
+  const mergedLinks = CONTACT_LINKS_STATIC.map((staticLink) => ({
+    ...staticLink,
+    label: translatedLinks.find((l) => l.id === staticLink.id)?.label ?? staticLink.id,
+  }))
+
   return (
     <section className="contact-section" id="Contact">
       <div className="contact-Heading">
-         <span className="contact-eyebrow">// Get In Touch</span>
+        <span className="contact-eyebrow">{t('contact.eyebrow')}</span>
 
         <h2 className="contact-heading">
-          Let&apos;s <span className="contact-heading-accent">Collaborate</span>
+          {t('contact.headingPart1')}{" "}
+          <span className="contact-heading-accent">{t('contact.headingPart2')}</span>
         </h2>
       </div>
 
       <div className="contact-container">
-
         <div className="contact-grid">
           <div className="contact-info">
-            <p className="contact-intro">
-              I&apos;m currently open to freelance projects, full-time
-              opportunities, and exciting collaborations. Drop me a message —
-              I respond within 24 hours.
-            </p>
+            <p className="contact-intro">{t('contact.intro')}</p>
 
             <div className="contact-cards">
-              {CONTACT_LINKS.map(({ id, label, value, href, icon: Icon }) => (
+              {mergedLinks.map(({ id, label, value, href, icon: Icon }) => (
                 <a
                   key={id}
                   className="contact-card glass-card"
@@ -78,20 +81,15 @@ export default function Contact() {
                     <span className="contact-card-value">{value}</span>
                   </span>
 
-                  <ArrowUpRight
-                    className="contact-card-arrow"
-                    size={16}
-                    strokeWidth={1.75}
-                  />
+                  <ArrowUpRight className="contact-card-arrow" size={16} strokeWidth={1.75} />
                 </a>
               ))}
             </div>
           </div>
 
-          {/* Right column — form */}
-         <GetInTouchForm   />
+          <GetInTouchForm />
         </div>
       </div>
     </section>
-  );
+  )
 }

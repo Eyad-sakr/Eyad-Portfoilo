@@ -1,4 +1,4 @@
-import { CONTACT_LINKS } from "../GetInTouch/Contact"
+import { CONTACT_LINKS_STATIC } from "../GetInTouch/Contact"
 export default function Footer() {
   return (
     <footer className="footer">
@@ -7,13 +7,12 @@ export default function Footer() {
       </p>
 
       <div className="footer-socials">
-        {CONTACT_LINKS.map(({ id, href, icon: Icon, label }) => (
+        {CONTACT_LINKS_STATIC.map(({ id, href, icon: Icon}) => (
           <a
             key={id}
             href={href}
             target={id === "email" ? undefined : "_blank"}
             rel={id === "email" ? undefined : "noreferrer"}
-            aria-label={label}
           >
             <Icon size={18} strokeWidth={1.75} />
           </a>

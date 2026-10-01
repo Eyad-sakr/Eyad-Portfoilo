@@ -1,10 +1,12 @@
 import { Link, useNavigate } from "react-router-dom"
 import BrowserMockup from "../ui/BrowserMockup"
 import type { Service } from "../../data/ServiceData"
+import { useTranslation } from "react-i18next";
 export interface ServiceHeroProps {
   service: Service;
 }
 function ServiceHero({service}:ServiceHeroProps) {
+  const {t} = useTranslation();
   const navigate = useNavigate();
 
   const handleContactClick = () => {
@@ -29,13 +31,13 @@ function ServiceHero({service}:ServiceHeroProps) {
             e.preventDefault();
             handleContactClick();
           }} className="btn btn-primary">
-              Start a Project →
+              {t("services.StartProject")}
             </Link>
             <Link to="#"  onClick={(e) => {
             e.preventDefault();
             handleProjectsClick();
           }} className="btn btn-secondary">
-              View Projects
+               {t("services.viewProjects")}
             </Link>
           </div>
       </div>

@@ -340,6 +340,11 @@ font-size: clamp(15px, 1.5vw, 18px);
     line-height: 1.65;
     margin: 0;
 }
+/* Projects */
+#Service .wraaper #Projects {
+  margin-inline: 118px;
+    padding: 90px 4%;
+}
 /* Collaborate */
 #Service .Collaborate {
     padding: 90px 4%;
@@ -428,18 +433,23 @@ font-size: clamp(15px, 1.5vw, 18px);
         padding: 60px 3%;
         margin: 0;
     }
+    #Service .wraaper #Projects {
+ padding: 60px 3%;
+        margin: 0;
+}
 
 }
 /* ============ Mobile: up to 500px ============ */
 @media (max-width: 500px) {
 
   #Service .Serv-Hero {
-    grid-template-columns: 1fr;
-    gap: 40px;
-    padding: 50px 24px;
-    margin-inline: 0;
-    overflow-x: hidden;
-    max-width: 100vw;
+   display: flex;
+        gap: 40px;
+        padding: 60px 3%;
+        margin-inline: 0;
+        overflow-x: hidden;
+        max-width: 100vw;
+        flex-direction: column-reverse;
   }
 
   #Service .Serv-Hero .service-title {
@@ -516,6 +526,13 @@ font-size: clamp(15px, 1.5vw, 18px);
     left: -30px;
     transform: translateX(-50%);
   }
+  #Service .wraaper #Projects {
+ padding: 60px 3%;
+        margin: 0;
 }
+
+
+}
+
 
 

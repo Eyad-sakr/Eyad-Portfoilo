@@ -1,30 +1,23 @@
+import { useTranslation } from "react-i18next"
 import FadeUp from "../Animation/FadeUp"
 
-function AboutStats() {
+const statClasses = ["Projects", "Happy-Clients", "Client"]
 
-  return (<FadeUp>
-  <div className="AboutStats">
-    <div className="Experience glass-card">
-        <div className="StatsDott"></div>
-        <div>1+</div>
-        <div>Years Experience</div>
-    </div>
-    <div className="Projects glass-card">
-         <div className="StatsDott"></div>
-        <div>3+</div>
-        <div>Projects Built</div>
-    </div>
-    <div className="Happy-Clients glass-card">
-         <div className="StatsDott"></div>
-        <div>2+</div>
-        <div>Happy Clients</div>
-    </div>
-    <div className="Client glass-card">
-        <div className="StatsDott"></div>
-        <div>99%</div>
-        <div>Client Satisfaction</div>
-    </div> 
-    </div>
+function AboutStats() {
+  const { t } = useTranslation()
+  const stats = t('about.stats', { returnObjects: true }) as { value: string; label: string }[]
+
+  return (
+    <FadeUp>
+      <div className="AboutStats">
+        {stats.map((stat, index) => (
+          <div className={`${statClasses[index]} glass-card`} key={index}>
+            <div className="StatsDott"></div>
+            <div>{stat.value}</div>
+            <div>{stat.label}</div>
+          </div>
+        ))}
+      </div>
     </FadeUp>
   )
 }

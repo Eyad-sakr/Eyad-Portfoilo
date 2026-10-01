@@ -1,6 +1,6 @@
 #Projects {
    padding: 90px 5%;
-    text-align: left;
+    text-align: start;
     color: white;
     /* background-color: var(--bg-primary) ; */
 }
@@ -87,7 +87,7 @@
     line-height: 1.7;
     margin-bottom: 20px;
     flex: 1 1 0%;
-    text-align: left;
+    text-align: start;
 }
 #Projects .Projects-Container .Project-card .Project-Content .tech-stack {
     display: flex;

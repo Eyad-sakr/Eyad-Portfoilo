@@ -1,4 +1,21 @@
-
+.Cta-Button {
+   background: rgba(34, 211, 238, 0.08);
+    border: 1.5px solid #22d3ee;
+    color: #22d3ee;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: clamp(11px, 1vw, 13px);
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    transition: all 280ms cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 0 12px rgba(34, 211, 238, 0.4),
+                inset 0 0 12px rgba(34, 211, 238, 0.1);
+    text-shadow: 0 0 8px rgba(34, 211, 238, 0.3);
+    white-space: nowrap;
+    flex-shrink: 0;
+    text-decoration: none;
+}
 /* ============================== Responsive ============================== */
 @media (max-width: 500px) {
 

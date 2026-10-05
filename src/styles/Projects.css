@@ -3,6 +3,7 @@
     text-align: start;
     color: white;
     /* background-color: var(--bg-primary) ; */
+    scroll-margin-top: 70px; 
 }
 #Projects .Projects-Heading {
     margin-bottom: 72px;
@@ -176,4 +177,31 @@
         padding: 60px 3%;
     }
     
+}
+@media (max-width: 501px) {
+  #Projects .Projects-Container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 4px 5% 16px;
+    scrollbar-width: none;
+  }
+
+  #Projects .Projects-Container::-webkit-scrollbar {
+    display: none;
+  }
+
+ #Projects .Projects-Container .Project-card {
+    flex: 0 0 82%;
+    scroll-snap-align: center;
+    min-width: 0;
+  }
+
+  .Project-card:hover {
+    transform: none;
+  }
 }

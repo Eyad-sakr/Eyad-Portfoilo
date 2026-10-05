@@ -5,7 +5,7 @@ function ServiceCollaborate() {
   const {t} = useTranslation();
   const navigate = useNavigate();
   const handleContactClick = () => {
-    navigate('/', { state: { scrollTo: 'contact' } });
+    navigate('/', { state: { scrollTo: 'Contact' } });
   };
 
   return (

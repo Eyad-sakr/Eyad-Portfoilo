@@ -10,7 +10,7 @@ import SectionDivider from "../Components/ui/SectionDivider"
 import HowIWork from "../Components/ServicePage/HowIWork"
 import Projects from "../Components/Projects/Projects"
 import ServiceCollaborate from "../Components/ServicePage/ServiceCollaborate"
-import { useEffect, useLayoutEffect } from "react"
+import { useLayoutEffect } from "react"
 
 function Service() {
   const { t } = useTranslation()

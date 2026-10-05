@@ -10,7 +10,7 @@ function ServiceHero({service}:ServiceHeroProps) {
   const navigate = useNavigate();
 
   const handleContactClick = () => {
-    navigate('/', { state: { scrollTo: 'contact' } });
+    navigate('/', { state: { scrollTo: 'Contact' } });
   };
    const handleProjectsClick = () => {
     navigate('/', { state: { scrollTo:'Projects' } });

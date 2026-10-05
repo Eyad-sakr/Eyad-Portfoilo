@@ -151,3 +151,30 @@ border-radius: 20px;
     height: 18px;
     color: #22d3ee;
 }
+@media (max-width: 501px) {
+  #Services .services-Cards {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 4px 5% 16px;
+    scrollbar-width: none;
+  }
+
+  #Services .services-Cards::-webkit-scrollbar {
+    display: none;
+  }
+
+  #Services .services-Cards .Service-Card {
+    flex: 0 0 82%;
+    scroll-snap-align: center;
+    min-width: 0;
+  }
+
+  .Service-Card:hover {
+    transform: none;
+  }
+}

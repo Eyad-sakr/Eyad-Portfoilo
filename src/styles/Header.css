@@ -178,6 +178,7 @@ nav button:hover {
 
   .mobile-menu .Header-Cta a {
     display: flex;
+    text-decoration: none;
   }
 
   .mobile-menu .Header-Cta .Cta-Button {

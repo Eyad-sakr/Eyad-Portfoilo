@@ -24,19 +24,28 @@ function HomeContent() {
   }, [i18n.language])
 
   useEffect(() => {
-    if (location.state?.scrollTo) {
-      const timer = setTimeout(() => {
-        const element = document.getElementById(location.state.scrollTo)
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' })
-        }
-      }, 300)
-      
-      return () => clearTimeout(timer)
-    } else {
-      window.scrollTo(0, 0)
+  const target = location.state?.scrollTo
+  if (!target) {
+    window.scrollTo({ top: 0, behavior: 'instant' })
+    return
+  }
+
+  const scrollToTarget = (behavior: ScrollBehavior) => {
+    const el = document.getElementById(target)
+    if (el) {
+      const top = el.getBoundingClientRect().top + window.scrollY 
+      window.scrollTo({ top, behavior })
     }
-  }, [location])
+  }
+
+  const t1 = setTimeout(() => scrollToTarget('smooth'), 400)
+  const t2 = setTimeout(() => scrollToTarget('smooth'), 1000) 
+
+  return () => {
+    clearTimeout(t1)
+    clearTimeout(t2)
+  }
+}, [location])
 
   return (
     <>

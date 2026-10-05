@@ -20,11 +20,11 @@ function HamburgerNav({ isOpen, setIsOpen }:proptype) {
         <span />
       </button>
       <ul className={`mobile-menu ${isOpen ? "open" : ""}`}>
-        <li>{t("header.services")}</li>
-        <li>{t("header.about")}</li>
-        <li>{t("header.skills")}</li>
-        <li>{t("header.projects")}</li>
-        <li>{t("header.contact")}</li>
+       <a href="#Services"> <li>{t("header.services")}</li></a>
+       <a href="#About"> <li>{t("header.about")}</li></a>
+        <a href="#Skills"><li>{t("header.skills")}</li></a>
+        <a href="#Projects"><li>{t("header.projects")}</li></a>
+        <a href="#Contact"><li>{t("header.contact")}</li></a>
         <HeaderCta/>
       </ul>
     </>

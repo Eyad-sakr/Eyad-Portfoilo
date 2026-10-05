@@ -10,12 +10,19 @@ import SectionDivider from "../Components/ui/SectionDivider"
 import HowIWork from "../Components/ServicePage/HowIWork"
 import Projects from "../Components/Projects/Projects"
 import ServiceCollaborate from "../Components/ServicePage/ServiceCollaborate"
+import { useEffect, useLayoutEffect } from "react"
 
 function Service() {
   const { t } = useTranslation()
   const { id } = useParams()
   const services = getServices(t)
-  const service = services.find((s) => s.id === Number(id))
+  const service = services.find((s) => s.id === Number(id));
+  useLayoutEffect(() => {
+  const html = document.documentElement
+  html.style.scrollBehavior = 'auto'
+  window.scrollTo(0, 0)
+  html.style.scrollBehavior = ''
+}, [id])
 
   if (!service)
     return (
